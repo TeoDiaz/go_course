@@ -23,7 +23,7 @@ Give my package all the functionally inside "fmt"
 bool: true - false
 string: "Hi"
 int: 0 - 999
-float64`: 10.0001
+float64: 10.0001
 ```
 
 ## Declare variables
@@ -55,6 +55,32 @@ type deck []string
 cards := deck{"Ace of Diamonds", newCard()}
 ```
 
+### Byte Slice 
+
+```go
+"Hi there!" -> String
+
+[72 105 32 116 104 101 114 101 33] -> Byte slice
+
+data []byte
+
+asciitable.com
+```
+
+### Type Convertion
+
+```go
+[]byte("Hi there!")
+```
+
+Example: 
+
+```go
+greeting :=  "Hi!"
+
+fm.Println([]byte(greeting))
+```
+
 ## Receiver function
 
 ```go
@@ -67,4 +93,5 @@ func (d deck) print() {
 
 Any variable of type `deck` now gets access to the `print` method.
 For convention, we call the iterable with the first char of the name of the type. 
+
 
